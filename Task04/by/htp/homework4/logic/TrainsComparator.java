@@ -55,7 +55,6 @@ public class TrainsComparator implements Comparator<Train> {
 	        
 	    }
 	};
-	
 
 	public static Comparator<Train> destinationComparator = new Comparator<Train>() {
 

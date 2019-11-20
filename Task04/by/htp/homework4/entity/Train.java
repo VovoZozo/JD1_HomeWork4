@@ -1,8 +1,6 @@
 package by.htp.homework4.entity;
 
-import java.util.Comparator;
-
-public class Train implements Comparable<Train> {
+public class Train {
 
 	private String destination;
 	private String pointDeparture;
@@ -114,9 +112,6 @@ public class Train implements Comparable<Train> {
 		return true;
 	}
 
-	public int compareTo(Train train) {
-		return (this.trainNumber - train.trainNumber);
-	}
 
 	
 }
