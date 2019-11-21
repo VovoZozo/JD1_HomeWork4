@@ -31,8 +31,12 @@ public class TriangleLogic {
 		Segment segment3 = new Segment(top2, top3);
 
 		SegmentLogic logic = new SegmentLogic();
-
-		double perimetr = logic.length(segment1) + logic.length(segment2) + logic.length(segment3);
+		
+		double ab = logic.length(segment1);
+		double ac = logic.length(segment2);
+		double bc = logic.length(segment3);
+		
+		double perimetr = ab + ac + bc;
 
 		return perimetr;
 	}
