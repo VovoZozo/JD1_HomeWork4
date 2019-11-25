@@ -2,7 +2,7 @@ package by.htp.homework4.main;
 
 import by.htp.homework4.entity.Time;
 import by.htp.homework4.logic.TimeLogic;
-import by.htp.homework4.print.PrintTime;
+import by.htp.homework4.view.PrintTime;
 
 public class MainTime {
 

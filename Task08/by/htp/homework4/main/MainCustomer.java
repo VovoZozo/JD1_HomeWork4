@@ -10,8 +10,8 @@ import by.htp.homework4.entity.CustomerList;
 import by.htp.homework4.entity.FullName;
 import by.htp.homework4.logic.BankInformationLogic;
 import by.htp.homework4.logic.CustomerComparator;
-import by.htp.homework4.printer.CustomerPrinter;
-import by.htp.homework4.printer.FullNamePrinter;
+import by.htp.homework4.view.CustomerPrinter;
+import by.htp.homework4.view.FullNamePrinter;
 
 public class MainCustomer {
 

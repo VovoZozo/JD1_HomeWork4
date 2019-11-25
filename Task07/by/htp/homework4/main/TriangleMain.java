@@ -3,7 +3,7 @@ package by.htp.homework4.main;
 import by.htp.homework4.entity.Coordinate;
 import by.htp.homework4.entity.Triangle;
 import by.htp.homework4.logic.TriangleLogic;
-import by.htp.homework4.print.TrianglePrinter;
+import by.htp.homework4.view.TrianglePrinter;
 
 public class TriangleMain {
 
