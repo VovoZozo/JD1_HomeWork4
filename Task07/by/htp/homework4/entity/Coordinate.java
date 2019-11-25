@@ -1,11 +1,12 @@
 package by.htp.homework4.entity;
 
 public class Coordinate {
-	
+
 	private double x;
 	private double y;
 
 	public Coordinate() {
+
 	}
 
 	public Coordinate(double x, double y) {

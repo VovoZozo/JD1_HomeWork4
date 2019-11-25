@@ -29,7 +29,7 @@ public class MainCount {
 		print.printCount(count1);
 		countLogic.downCount(count1, 5);
 		print.printCount(count1);
-		
+
 		System.out.println(count.toString());
 		System.out.println(count1.toString());
 	}

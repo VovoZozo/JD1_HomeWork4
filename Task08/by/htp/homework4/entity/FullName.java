@@ -3,7 +3,7 @@ package by.htp.homework4.entity;
 import java.util.Objects;
 
 public class FullName {
-	
+
 	private String name;
 	private String middleName;
 	private String surname;
@@ -12,14 +12,10 @@ public class FullName {
 
 	}
 
-	public FullName(String... fullName) {
-		try {
-			this.name = fullName[0];
-			this.middleName = fullName[1];
-			this.surname = fullName[2];
-		} catch (Exception ArrayIndexOutOfBoundsException) {
-			System.out.println("Incomplete data entered \"Full Name \"");
-		}
+	public FullName(String name, String middleName, String surname) {
+		this.name = name;
+		this.middleName = middleName;
+		this.surname = surname;
 	}
 
 	public String getSurname() {
@@ -45,8 +41,6 @@ public class FullName {
 	public void setMiddleName(String middleName) {
 		this.middleName = middleName;
 	}
-	
-	
 
 	@Override
 	public int hashCode() {
@@ -70,7 +64,5 @@ public class FullName {
 	public String toString() {
 		return "FullName [name=" + name + ", middleName=" + middleName + ", surname=" + surname + "]";
 	}
-
-	
 
 }

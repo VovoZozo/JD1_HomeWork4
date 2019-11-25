@@ -2,7 +2,7 @@ package by.htp.homework4.printer;
 
 import by.htp.homework4.entity.Address;
 import by.htp.homework4.entity.Customer;
-import by.htp.homework4.list.CustomerList;
+import by.htp.homework4.entity.CustomerList;
 
 public class AddressPrinter {
 
@@ -12,7 +12,6 @@ public class AddressPrinter {
 
 	public void printAddress(CustomerList customers) {
 		customers.getCustomers().forEach(customer -> printAddress(customer.getAddress()));
-		;
 	}
 
 	public void printAddress(Address address) {

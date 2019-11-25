@@ -53,7 +53,5 @@ public class BankInformation {
 	public String toString() {
 		return "BankInformation [cardNumber=" + cardNumber + ", bankAccountNumber=" + bankAccountNumber + "]";
 	}
-	
-	
 
 }

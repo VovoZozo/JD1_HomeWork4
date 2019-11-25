@@ -1,7 +1,7 @@
 package by.htp.homework4.printer;
 
 import by.htp.homework4.entity.Customer;
-import by.htp.homework4.list.CustomerList;
+import by.htp.homework4.entity.CustomerList;
 
 public class CustomerPrinter {
 
@@ -19,6 +19,5 @@ public class CustomerPrinter {
 
 	public void printCustomer(CustomerList customers) {
 		customers.getCustomers().forEach(customer -> printCustomer(customer));
-		;
 	}
 }

@@ -69,7 +69,9 @@ public class Train {
 	}
 
 	public String toString() {
-		return "[trainNumber=" + this.trainNumber + ", destination=" + this.destination + ", " + "pointDeparture=" + this.pointDeparture + ", " + "departureHour=" + this.departureHour + ", departureMinute=" + this.departureMinute + "]" + "\n";
+		return "[trainNumber=" + this.trainNumber + ", destination=" + this.destination + ", " + "pointDeparture="
+				+ this.pointDeparture + ", " + "departureHour=" + this.departureHour + ", departureMinute="
+				+ this.departureMinute + "]" + "\n";
 	}
 
 	@Override
@@ -111,5 +113,5 @@ public class Train {
 			return false;
 		return true;
 	}
-	
+
 }

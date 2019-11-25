@@ -4,8 +4,8 @@ import by.htp.homework4.entity.Coordinate;
 
 public class Segment {
 
-	Coordinate top1;
-	Coordinate top2;
+	private Coordinate top1;
+	private Coordinate top2;
 
 	public Segment(int x1, int y1, int x2, int y2) {
 		top1 = new Coordinate(x1, y1);

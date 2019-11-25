@@ -1,12 +1,12 @@
 package by.htp.homework4.view;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import by.htp.homework4.entity.Student;
 
 public class GropePrinter {
 	
-	public void printArrayStudentOverNine(ArrayList<Student> students) {
+	public void printArrayStudentOverNine(List<Student> students) {
 		
 		if (students.size() != 0) {
 			System.out.println("Группа № - " + students.get(0).getGropeNumber());

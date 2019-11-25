@@ -18,21 +18,17 @@ public class Address {
 
 	}
 
-	public Address(String... address) {
-		try {
-			this.country = address[0];
-			this.state = address[1];
-			this.town = address[2];
-			this.street = address[3];
-			this.house = address[4];
-			this.building = address[5];
-			this.apartment = address[6];
-			this.porch = address[7];
-			this.floor = address[8];
-		} catch (Exception ArrayIndexOutOfBoundsException) {
-			System.out.println("Incomplete data entered \"Adsress \"");
-		}
-
+	public Address(String country, String state, String town, String street, String house, String building,
+			String apartment, String porch, String floor) {
+		this.country = country;
+		this.state = state;
+		this.town = town;
+		this.street = street;
+		this.house = house;
+		this.building = building;
+		this.apartment = apartment;
+		this.porch = porch;
+		this.floor = floor;
 	}
 
 	public String getCountry() {

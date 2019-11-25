@@ -1,6 +1,7 @@
 package by.htp.homework4.main;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import by.htp.homework4.entity.Group;
 import by.htp.homework4.entity.Student;
@@ -71,24 +72,44 @@ public class MainGroupList {
 		student6.setSurname("Ginsberg");
 		student6.setName("Kate");
 		student6.setGropeNumber(5);
+		
+		List<Student> group1Students = new ArrayList<Student>();
+		group1Students.add(student7);
+		group1Students.add(student5);
+		
+		List<Student> group2Students = new ArrayList<Student>();
+		group2Students.add(student8);
+		
+		List<Student> group3Students = new ArrayList<Student>();
+		group3Students.add(student1);
+		group3Students.add(student9);
+		
+		List<Student> group4Students = new ArrayList<Student>();
+		group3Students.add(student2);
+		group3Students.add(student3);
+		
+		List<Student> group5Students = new ArrayList<Student>();
+		group5Students.add(student0);
+		group5Students.add(student4);
+		group5Students.add(student6);
+		
+		Group group1 = new Group(1, group1Students);
 
-		Group group1 = new Group(1, student7, student5);
+		Group group2 = new Group(2, group2Students);
 
-		Group group2 = new Group(2, student8);
+		Group group3 = new Group(3, group3Students);
 
-		Group group3 = new Group(3, student1, student9);
+		Group group4 = new Group(4, group4Students);
 
-		Group group4 = new Group(4, student2, student3);
-
-		Group group5 = new Group(5, student0, student4, student6);
+		Group group5 = new Group(5, group5Students);
 
 		GroupLogic logic = new GroupLogic();
 
-		ArrayList<Student> group1OverNine = logic.performanceOverNine(group1);
-		ArrayList<Student> group2OverNine = logic.performanceOverNine(group2);
-		ArrayList<Student> group3OverNine = logic.performanceOverNine(group3);
-		ArrayList<Student> group4OverNine = logic.performanceOverNine(group4);
-		ArrayList<Student> group5OverNine = logic.performanceOverNine(group5);
+		List<Student> group1OverNine = logic.performanceOverNine(group1);
+		List<Student> group2OverNine = logic.performanceOverNine(group2);
+		List<Student> group3OverNine = logic.performanceOverNine(group3);
+		List<Student> group4OverNine = logic.performanceOverNine(group4);
+		List<Student> group5OverNine = logic.performanceOverNine(group5);
 
 		GropePrinter overNine = new GropePrinter();
 

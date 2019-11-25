@@ -1,27 +1,21 @@
 package by.htp.homework4.entity;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class Depo {
-	
+
 	private int number;
-	ArrayList<Train> trains = new ArrayList<Train>();
-	
+	private List<Train> trains;
+
 	public Depo() {
-		
+
 	}
-	
-	public Depo(int number, ArrayList<Train> trains) {
+
+	public Depo(int number, List<Train> trains) {
 		this.number = number;
 		this.trains = trains;
 	}
-	
-	public Depo(int number, Train... trains) {
-		this.number = number;
-		this.trains.addAll(Arrays.asList(trains));
-	}
-	
+
 	@Override
 	public String toString() {
 		return "GroupList [number=" + number + ",\n trains=\n" + trains + "]";
@@ -35,15 +29,15 @@ public class Depo {
 		this.number = number;
 	}
 
-	public ArrayList<Train> getTrains() {
+	public List<Train> getTrains() {
 		return trains;
 	}
-	
+
 	public Train getTrains(int i) {
 		return trains.get(i);
 	}
 
-	public void setTrains(ArrayList<Train> trains) {
+	public void setTrains(List<Train> trains) {
 		this.trains = trains;
 	}
 
@@ -78,6 +72,5 @@ public class Depo {
 			return false;
 		return true;
 	}
-	
-	
+
 }

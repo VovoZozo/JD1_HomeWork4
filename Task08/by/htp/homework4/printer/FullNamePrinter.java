@@ -1,8 +1,8 @@
 package by.htp.homework4.printer;
 
 import by.htp.homework4.entity.Customer;
+import by.htp.homework4.entity.CustomerList;
 import by.htp.homework4.entity.FullName;
-import by.htp.homework4.list.CustomerList;
 
 public class FullNamePrinter {
 

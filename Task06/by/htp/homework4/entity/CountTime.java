@@ -8,6 +8,7 @@ public class CountTime {
 	private int count;
 
 	public CountTime() {
+
 	}
 
 	public CountTime(int count) {
@@ -78,7 +79,5 @@ public class CountTime {
 			return false;
 		return true;
 	}
-	
-	
-	
+
 }

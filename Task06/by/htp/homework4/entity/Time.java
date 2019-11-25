@@ -2,9 +2,9 @@ package by.htp.homework4.entity;
 
 public class Time {
 
-	Minute minute = new Minute();
-	Hour hour = new Hour();
-	Second second = new Second();
+	private Minute minute = new Minute();
+	private Hour hour = new Hour();
+	private Second second = new Second();
 
 	public Time(int hour, int minute, int second) {
 		this.hour.setCount(hour);

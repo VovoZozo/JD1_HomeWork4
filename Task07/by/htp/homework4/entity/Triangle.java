@@ -2,16 +2,16 @@ package by.htp.homework4.entity;
 
 public class Triangle {
 
-	Coordinate top1;
-	Coordinate top2;
-	Coordinate top3;
+	private Coordinate top1;
+	private Coordinate top2;
+	private Coordinate top3;
 
 	public Triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
 		top1 = new Coordinate(x1, y1);
 		top2 = new Coordinate(x2, y2);
 		top3 = new Coordinate(x3, y3);
 	}
-	
+
 	public Triangle(Coordinate top1, Coordinate top2, Coordinate top3) {
 		this.top1 = top1;
 		this.top2 = top2;

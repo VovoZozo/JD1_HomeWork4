@@ -17,7 +17,7 @@ public class Count {
 		this.minCount = minCount;
 		this.maxCount = maxCount;
 	}
-	
+
 	public Count(int count) {
 		this.count = count;
 		this.minCount = Integer.MIN_VALUE;

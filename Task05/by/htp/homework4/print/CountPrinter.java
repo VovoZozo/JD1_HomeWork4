@@ -13,11 +13,4 @@ public class CountPrinter {
 		System.out.println("Max value = " + count.getMaxCount());
 	}
 	
-	public void moreThanMax(Count count) {
-		System.out.println("Established value more than maximum value.");
-	}
-	
-	public void lessThanMax(Count count) {
-		System.out.println("Established value less than maximum value.");
-	}
 }

@@ -11,4 +11,5 @@ public class Hour extends CountTime {
 	public String toString() {
 		return "Hour = " + getCount();
 	}
+	
 }

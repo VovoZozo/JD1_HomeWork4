@@ -4,19 +4,23 @@ import java.util.Comparator;
 import by.htp.homework4.entity.Train;
 
 public class TrainsComparator implements Comparator<Train> {
- 
-    @Override
-    public int compare(Train o1, Train o2) {
-    	
-        int flag = o1.getDestination().compareTo(o2.getDestination());
-         
-        if(flag == 0) flag = o1.getDepartureHour() - (o2.getDepartureHour());
-        
-        if(flag == 0) flag = o1.getDepartureMinute() - (o2.getDepartureMinute());
-        
-        return flag;
-        
-    }
+
+	@Override
+	public int compare(Train o1, Train o2) {
+
+		int flag = o1.getDestination().compareTo(o2.getDestination());
+
+		if (flag == 0) {
+			flag = o1.getDepartureHour() - (o2.getDepartureHour());
+		}
+
+		if (flag == 0) {
+			flag = o1.getDepartureMinute() - (o2.getDepartureMinute());
+		}
+
+		return flag;
+
+	}
 
 	public static Comparator<Train> trainNumberComparator = new Comparator<Train>() {
 
@@ -41,19 +45,21 @@ public class TrainsComparator implements Comparator<Train> {
 			return e1.getDepartureMinute() - e2.getDepartureMinute();
 		}
 	};
-	
+
 	public static Comparator<Train> departureHourAndMinuteComparator = new Comparator<Train>() {
 
 		@Override
-	    public int compare(Train o1, Train o2) {
-	    	
-	        int flag = o1.getDepartureHour() - o2.getDepartureHour();
-	        
-	        if(flag == 0) flag = o1.getDepartureMinute() - (o2.getDepartureMinute());
-	        
-	        return flag;
-	        
-	    }
+		public int compare(Train o1, Train o2) {
+
+			int flag = o1.getDepartureHour() - o2.getDepartureHour();
+
+			if (flag == 0) {
+				flag = o1.getDepartureMinute() - (o2.getDepartureMinute());
+			}
+
+			return flag;
+
+		}
 	};
 
 	public static Comparator<Train> destinationComparator = new Comparator<Train>() {

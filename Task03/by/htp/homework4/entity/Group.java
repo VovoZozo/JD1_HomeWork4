@@ -1,27 +1,21 @@
 package by.htp.homework4.entity;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class Group {
 
 	private int number;
-	ArrayList<Student> students = new ArrayList<Student>();
-	
+	private List<Student> students;
+
 	public Group() {
-		
+
 	}
-	
-	public Group(int number, ArrayList<Student> students) {
+
+	public Group(int number, List<Student> students) {
 		this.number = number;
 		this.students = students;
 	}
-	
-	public Group(int number, Student... students) {
-		this.number = number;
-		this.students.addAll(Arrays.asList(students));
-	}
-	
+
 	@Override
 	public String toString() {
 		return "GroupList [number=" + number + ",\n students=\n" + students + "]";
@@ -35,18 +29,18 @@ public class Group {
 		this.number = number;
 	}
 
-	public ArrayList<Student> getStudents() {
+	public List<Student> getStudents() {
 		return students;
 	}
-	
+
 	public Student getStudents(int i) {
 		return students.get(i);
 	}
 
-	public void setStudents(ArrayList<Student> students) {
+	public void setStudents(List<Student> students) {
 		this.students = students;
 	}
-	
+
 	public void setStudents(Student student) {
 		this.students.add(student);
 	}
